@@ -1,0 +1,612 @@
+{\rtf1\ansi \deflang1033\deff0{\fonttbl
+{\f0\fmodern \fcharset0 \fprq1 Courier New;}}{\colortbl;\red0\green0\blue0;}
+{\stylesheet{\fs20 \snext0 Normal;}
+{\s1 \qj _26;}
+{\s2 \qj\fi-720\li1440\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _25;}
+{\s3 \qj\li2160\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _24;}
+{\s4 \qj\li2880\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _23;}
+{\s5 \qj\li3600\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _22;}
+{\s6 \qj\li4320\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _21;}
+{\s7 \qj\li5040\tx5040\tx5760\tx6480\tx7200\tx7920 _20;}
+{\s8 \qj\li5760\tx5760\tx6480\tx7200\tx7920 _19;}
+{\s9 \qj\li6480\tx6480\tx7200\tx7920 _18;}
+{\s10 \qj\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _17;}
+{\s11 \qj\fi-720\li1440\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _16;}
+{\s12 \qj\li2160\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _15;}
+{\s13 \qj\li2880\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _14;}
+{\s14 \qj\li3600\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _13;}
+{\s15 \qj\li4320\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _12;}
+{\s16 \qj\li5040\tx5040\tx5760\tx6480\tx7200\tx7920 _11;}
+{\s17 \qj\li5760\tx5760\tx6480\tx7200\tx7920 _10;}
+{\s18 \qj\li6480\tx6480\tx7200\tx7920 _9;}
+{\s19 \qj\tx0\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _8;}
+{\s20 \qj\fi-720\li1440\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _7;}
+{\s21 \qj\li2160\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _6;}
+{\s22 \qj\li2880\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _5;}
+{\s23 \qj\li3600\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _4;}
+{\s24 \qj\li4320\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920 _3;}
+{\s25 \qj\li5040\tx5040\tx5760\tx6480\tx7200\tx7920 _2;}
+{\s26 \qj\li5760\tx5760\tx6480\tx7200\tx7920 _1;}
+{\s27 \qj\li6480\tx6480\tx7200\tx7920 _;}
+}\notabind\margl1440\margr1440\hyphhotz936\ftnbj\fet2\ftnrstpg\aftnnar\viewkind1\lytprtmet\subfontbysize \sectd \sbknone\pgndec\headery1440\footery1440\endnhere\endnhere 
+{\footer {
+\posxc\nowrap \plain \fs24 {\field{\*\fldinst { PAGE  }}}\par}
+\par}
+{\*\pnseclvl1\pndec\pnstart1{\pntxta .}}
+{\*\pnseclvl2\pnlcltr\pnstart1{\pntxta .}}
+{\*\pnseclvl3\pnlcrm\pnstart1{\pntxta .}}
+{\*\pnseclvl4\pndec\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl5\pnlcltr\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl6\pnlcrm\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl7\pndec\pnstart1{\pntxta .}}
+{\*\pnseclvl8\pnlcltr\pnstart1{\pntxta .}}
+{\*\pnseclvl9\pnlcrm\pnstart1}
+
+{\field{\*\fldinst {\lang4105  SEQ CHAPTER \\h \\r 1}}{\fldrslt }}\pard \fs24\tx-1260\tx-720\tx0\tx360\tx720\tx1080\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs24 SAS code used to construct and analyze an integral population \softline
+model (IPM)\par
+}{\plain \fs24 \par
+}{\plain \fs24 Norma Fowler, University of Texas at Austin\par
+}{\plain \fs24 July 2015\par
+}{\plain \fs24 \par
+}{\plain \fs24 SAS components used: SAS BASIC, SAS STATS, SAS IML\par
+}{\plain \fs24 \par
+}{\plain \fs24 SAS IML (Interactive Matrix Language) comes with SAS just like \softline
+any other SAS component.  It is quite similar to MatLab in \softline
+structure and syntax. Free versions of SAS, both on their servers \softline
+and downloadable, are available.\par
+}{\plain \fs24 \par
+}{\plain \fs24 There are three sets of code here:\par
+}{\plain \fs24 \par
+}{\plain \fs24 \tab A. Code using SAS BASIC and SAS STAT to select the functions \softline
+used to construct the functions in the subroutines and \softline
+parameterize them. Before you can construct an IPM, you have to \softline
+identify appropriate predictive functions and parameterize them.}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \tab B.subroutines (in SAS IML) \par
+}{\plain \fs24 \tab \tab survival\par
+}{\plain \fs24 \tab \tab growth\par
+}{\plain \fs24 \tab \tab probability of reproducing\par
+}{\plain \fs24 \tab \tab seedset of reproductive plants\par
+}{\plain \fs24 \tab \tab probability of survival from seed to new recruit\par
+}{\plain \fs24 \tab \tab size distribution of new recruits to the population\par
+}{\plain \fs24 \par
+}{\plain \fs24 \tab C. construction of the IPM itself and calculation of {\u955\'eb}, right \softline
+eigenvector, and elasticities (mostly in SAS IML). includes a \softline
+call to each subroutine.}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \b\ul A. Examples of statistical code used to parameterize predictive \softline
+functions for an IPM}{\plain \fs24 \b \par
+}{\plain \fs24 \b \par
+}{\plain \fs24 \b {\u8226\'95}}{\plain \fs24  These are only examples. The functions in these examples were \softline
+selected through ordinary statistical analysis - partly through \softline
+trial-and-error, partly though past experience, and partly \softline
+through a comparing AIC values, X2 goodness-of-fit tests, R}{\plain \fs24 \super 2}{\plain \fs24  \softline
+values, plots of residuals, and/or plots of fitted functions.\par
+}{\plain \fs24 \par
+}{\plain \fs24 {\u8226\'95} IPMs require better fits than ordinary statistical analyses, in \softline
+general. In an IPM you are modeling distributions, not just \softline
+finding means. Therefore it is very important that the \softline
+distribution provides a really good fit. Notice how we made the \softline
+variance a function of size in the prediction of growth, in order 
+to improve the match between the distribution of the observed \softline
+values and the predicted distribution of values.\par
+}{\plain \fs24 \par
+}{\plain \fs24 {\u8226\'95} These models (except recruit size distribution) include a \softline
+random effect that represents plot-to-plot variation. The value \softline
+of the variable }{\plain \fs24 \i plotid}{\plain \fs24  identifies each plot. You might use other \softline
+random or fixed values in your models.  \par
+}{\plain \fs24 \par
+}{\plain \fs24 {\u8226\'95} Plotid was not carried forward into the IPM. Since plotid is a \softline
+random variable with a mean of 0, it was not necessary to correct \softline
+the intercept coefficients from the statistical output before \softline
+they were cut-and-pasted into the subroutines. This would not be \softline
+the case if, for example, you used the solution output of PROC \softline
+GLM, or if you included a fixed effect in PROC GLIMMIX; \softline
+correction of the intercept coefficient would then be required.   \par
+}{\plain \fs24 \par
+}{\plain \fs24 {\u8226\'95} }{\plain \fs24 \b WARNING}{\plain \fs24 : Any change in the functions (adding a predictive \softline
+variable, for example) requires corresponding changes in the \softline
+subroutines and (sometimes) in their call statements in the main \softline
+program.  \ul0 \tab \par
+}{\plain \fs24 \par
+}{\plain \fs24 \ul C1. growth function}{\plain \fs24 \par
+}{\plain \fs24 \tab {\u8226\'95} Only plants surviving the interval were included in the data \softline
+set.\par
+}{\plain \fs24 \tab {\u8226\'95} distribution is truncated negative binomial(mu,k), following \softline
+Bolker's terminology\par
+}{\plain \fs24 \tab {\u8226\'95} log}{\plain \fs24 \sub e}{\plain \fs24 (size2) is predicted from log}{\plain \fs24 \sub e}{\plain \fs24 (size1), parameters \softline
+b0(intercept) and b1 (slope) and plot effect qy\par
+}{\plain \fs24 \tab \tab }{\plain \fs24 \i log(size2) = b0 + b1*log(size1) + qy}{\plain \fs24 \par
+}{\plain \fs24 \tab {\u8226\'95} k is a function of size1 and parameters b2 and b3: \par
+}{\plain \fs24 \tab \tab }{\plain \fs24 \i k = b2 + b3*size1}{\plain \fs24 \par
+}{\plain \fs24 \tab {\u8226\'95} mu and k follow Bolker's terminology\par
+}{\plain \fs24 \tab {\u8226\'95} qy is the random plot effect (normal distribution, mean 0, \softline
+variance s2qy)\par
+}{\plain \fs24  \ul0 \tab {\u8226\'95} the log likelihood function, LL, includes the truncation as \softline
+its final term, equivalent to dividing each probability by (1 - \softline
+P(0))\par
+}{\plain \fs24 \tab {\u8226\'95} The data set datpredm has the predicted mean value (mu) of \softline
+the distribution for each plant, as a variable named pred. To \softline
+back-transform these values into units of size: \par
+}{\plain \fs24 \tab \tab predback = exp(pred);\par
+}{\plain \fs24 \tab {\u8226\'95} We don't recommend it, but if you want to avoid using the \softline
+truncated negative binomial you could use the lognormal by \softline
+modifying the seedset function code.\par
+}{\plain \fs24 \par
+}{\plain \fs24 \ul code}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 proc nlmixed data=datsurvivors; \par
+}{\plain \fs24 \ul0 \tab title 'growth function';\par
+}{\plain \fs24   parms b0=1 b1=1 b2=1 b3=1 s2qy=0.1;          \par
+}{\plain \fs24   random qy ~ normal(0,s2qy) subject=plotid; \par
+}{\plain \fs24   mu = exp(b0 + b1*log(t1) + qy);             \par
+}{\plain \fs24   k = b2 + b3*t1;\par
+}{\plain \fs24   LL= lgamma(k+t2) - lgamma(k) - lgamma(t2+}{\plain \fs24 \b 1}{\plain \fs24 )\par
+}{\plain \fs24        + k*log(k/(k+mu)) + t2*log(mu/(k+mu))\par
+}{\plain \fs24 \tab \tab   - log (}{\plain \fs24 \b 1}{\plain \fs24 -(k/(k+mu))**k);\par
+}{\plain \fs24   model t2 ~ general(LL);\par
+}{\plain \fs24   predict mu out=datpredm;         * predicted values of mu;\par
+}{\plain \fs24 run;\par
+}{\plain \fs24 \par
+}{\plain \fs24 \ul C2. recruit size distribution}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \tab {\u8226\'95} This fits the truncated negative binomial distribution to \softline
+the new recruit size data.\par
+}{\plain \fs24 \par
+}{\plain \fs24 \ul code}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 proc nlmixed data=datnewrecruits; \par
+}{\plain \fs24 \tab title 'newrecruit size function';     \par
+}{\plain \fs24 \tab parms k=1 mu=1;\par
+}{\plain \fs24 \tab LL= lgamma(k+t2) - lgamma(k) - lgamma(t2+)+ k*log(k/(k+mu))}{\plain \fs24 \par
+}{\plain \fs24 \tab \tab + t2*log(mu/(k+mu)) - log (1-(k/(k+mu))**k);\par
+}{\plain \fs24   model t2 ~ general(LL);\par
+}{\plain \fs24   predict k/(mu+k) out=predp;  \par
+}{\plain \fs24 run;}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \ul C3. probability of surviving}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \tab {\u8226\'95} The logit of survival probability is predicted by size1.\par
+}{\plain \fs24 \tab {\u8226\'95} When the binomial distribution is specified, the link \softline
+default function is the logit.\par
+}{\plain \fs24 \tab {\u8226\'95} The function for probability of reproduction was obtained in \softline
+the same way.\par
+}{\plain \fs24 \tab {\u8226\'95} For graphing purposes, plants can be grouped into size \softline
+classes, and the average value of pred obtained for each size \softline
+class.  This average can then be back-transformed:\par
+}{\plain \fs24 \tab }{\plain \fs24  \ul0 \tab predp = 1/(1 + exp(-pred));}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \ul code}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 proc glimmix data=datallplants;\par
+}{\plain \fs24 \tab title 'survival function'; \par
+}{\plain \fs24 \tab class plotid;\par
+}{\plain \fs24 \tab logsize1 = log(size1); \par
+}{\plain \fs24 \tab model surv = logsize1 / dist = binomial solution;\par
+}{\plain \fs24 \tab random plotid;\par
+}{\plain \fs24 \ul0 \tab output out=survout predicted = pred residual=ehat;\par
+}{\plain \fs24 run;\par
+}{\plain \fs24 \par
+}{\plain \fs24 \ul C4. seedset/reproductive plant}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \tab {\u8226\'95} This was fitted with a normal distribution. \par
+}{\plain \fs24 \tab {\u8226\'95} You could also use log(seedset1) as the response variable, \softline
+which would be, in effect, use of a lognormal distribution.  \par
+}{\plain \fs24 \tab {\u8226\'95} Only plants that reproduced at the beginning of the interval \softline
+were included in the data set.\par
+}{\plain \fs24 \par
+}{\plain \fs24 \ul code}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 proc glimmix data=rep1plants; \par
+}{\plain \fs24 \tab title 'seedset function'; \par
+}{\plain \fs24 \tab class plotid;\par
+}{\plain \fs24 \tab logsize1 = log(size1);\par
+}{\plain \fs24 \tab model seedset1 = logsize1 / distribution=normal solution;\par
+}{\plain \fs24 \tab random plotid;\par
+}{\plain \fs24 \tab output out=ssout resid=ehat pred=pred;\par
+}{\plain \fs24 * test residuals for normality;\par
+}{\plain \fs24 proc univariate data=ssout normal plot;\par
+}{\plain \fs24 \tab var ehat;\par
+}{\plain \fs24 run;}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \b\ul B. subroutines}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \ul storing and using subroutines in SAS}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 {\u8226\'95} NOTE that the subroutine code must be run (which will store \softline
+them in temporary storage) }{\plain \fs24 \ul before}{\plain \fs24  they can be called. The \softline
+subroutines will then be available until you quit IML.\par
+}{\plain \fs24 \par
+}{\plain \fs24 {\u8226\'95} So that you can quit IML and then re-enter it without re-running the subroutine-creating code, I have included a statement \softline
+to stores the subroutines in temporary storage, and my code for \softline
+the actual model re-loads them from temporary storage.\par
+}{\plain \fs24 \par
+}{\plain \fs24 {\u8226\'95} If you exit SAS, you have to re-run and store these subroutines \softline
+before you can run the actual model.\par
+}{\plain \fs24 \par
+}{\plain \fs24 {\u8226\'95} You can avoid all this by storing the subroutines in permanent \softline
+memory, if you want (not part of this code).\par
+}{\plain \fs24 \par
+}{\plain \fs24 {\u8226\'95} Unlike some languages, IML lists both input and output \softline
+variables of a subroutine in a single list, in the start 
+statement. The order of variables in this list }{\plain \fs24 \ul must}{\plain \fs24  match the \softline
+order of variables in the call statement!!!\par
+}{\plain \fs24 \par
+}{\plain \fs24 {\u8226\'95} Only variables listed in the start statement are "known" \softline
+outside the given subroutine. \par
+}{\plain \fs24 \par
+}{\plain \fs24 \ul units of size}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 {\u8226\'95} This code assumes that the measure of size is an integer \softline
+variable, such as number of tillers/plant.  \par
+}{\plain \fs24 \par
+}{\plain \fs24 \b {\u8226\'95} CRITICAL WARNING}{\plain \fs24  If you use a continuous variable such as \softline
+diameter to measure size, you will have to set up size classes, \softline
+and you will have to adjust the probabilities if the size classes \softline
+are not integers.  An example of a non-integer size classes would \softline
+be \{0.5 to 1 cm, 1 to 1.5 cm, 1.5 to 2 cm, ...\}. Always make sure \softline
+probabilities add to 1.0!\par
+}{\plain \fs24 \par
+}{\plain \fs24 {\u8226\'95} variable names\par
+}{\plain \fs24 \tab size1 = size at the beginning of the census interval\par
+}{\plain \fs24 \tab size2 = size at the end of the census interval\par
+}{\plain \fs24 \par
+}{\plain \fs24 \par
+}\sect \sectd \sbknone\margrsxn900\pgndec\headery1440\footery1440\endnhere\endnhere 
+{\footer {
+\posxc\nowrap \plain \fs24 {\field{\*\fldinst { PAGE  }}}\par}
+\par}
+{\*\pnseclvl1\pndec\pnstart1{\pntxta .}}
+{\*\pnseclvl2\pnlcltr\pnstart1{\pntxta .}}
+{\*\pnseclvl3\pnlcrm\pnstart1{\pntxta .}}
+{\*\pnseclvl4\pndec\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl5\pnlcltr\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl6\pnlcrm\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl7\pndec\pnstart1{\pntxta .}}
+{\*\pnseclvl8\pnlcltr\pnstart1{\pntxta .}}
+{\*\pnseclvl9\pnlcrm\pnstart1}
+
+\pard \fs24\tqr\tx9900
+{\plain \fs24 \ul subroutines code}{\plain \fs24 \ul0 \tab \par
+}\pard \fs24\tx-1260\tx-720\tx0\tx360\tx720\tx1080\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs24  \ul0 \tab \ul0 \tab \par
+}{\plain \fs24 OPTIONS FORMCHAR="|----|+|---+=|-/\\<>*"; * fixes output format;\par
+}{\plain \fs24 \par
+}{\plain \fs24 proc iml; title 'subroutine construction';\par
+}{\plain \fs24 * starts IML programming language;\par
+}{\plain \fs24 \par
+}{\plain \fs24 *------CREATE SUBROUTINES--------------------------------------;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * INSERT YOUR OWN, CORRECT PARAMETER VALUES, CUT-AND-PASTED FROM THE \softline
+STATISTICAL ANALYSES;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * SURVIVAL SUBROUTINE (named surv);\par
+}{\plain \fs24  \par
+}{\plain \fs24 * probability of surviving (psurv) as a function of size;\par
+}{\plain \fs24 * size1 is input, psurv is output;\par
+}{\plain \fs24 * target & adj are inputs for the elasticity analysis;}{\plain \fs24 \par
+}{\plain \fs24 * a binomial distribution and logit link function are used;\par
+}{\plain \fs24 * recall that the logit function a = logit(p) = log(p/(1-p));\par
+}{\plain \fs24 * recall that the back-transformation is p = exp(a)/((exp(a)+1);}{\plain \fs24  }{\plain \fs24  \par
+}{\plain \fs24 \par
+}{\plain \fs24 start surv(size1,psurv,target,adj);           * begins subroutine;\par
+}{\plain \fs24   logsize1 = log(size1);\par
+}{\plain \fs24   * predict logit(survival probability);\par
+}{\plain \fs24   logitpsurv = -}{\plain \fs24 \b 2.5}{\plain \fs24  + }{\plain \fs24 \b 1.7}{\plain \fs24 *logsize1;  * replace with your own values;\par
+}{\plain \fs24   * backtransform predicted value to a probability;\par
+}{\plain \fs24   explogit = exp(logitpsurv);\par
+}{\plain \fs24   psurv = explogit / (1 + explogit);    \par
+}{\plain \fs24   if (target='surv') then psurv = psurv*adj;  * for elasticity;\par
+}{\plain \fs24 finish;                                       * ends subroutine;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * GROWTH SUBROUTINE (named growth);\par
+}{\plain \fs24 \par
+}{\plain \fs24 * this subroutine calculates the probability (pgrow) of a plant of    \softline
+   size1 that survives becoming a plant of size2;\par
+}{\plain \fs24 * the sum of probabilities for a given value of size1 must add to 1;\par
+}{\plain \fs24 * i.e., pgrow = transition probability from size1 to size2;\par
+}{\plain \fs24 * tmax is the maximum size (and the dimension of the IPM matrix)\par
+}{\plain \fs24 * size1 and size2 are input, pgrow is output;}{\plain \fs24 \par
+}{\plain \fs24 * target & adj are inputs for the elasticity analysis;\par
+}{\plain \fs24 * distribution is truncated negative binomial, with parameters mu \softline
+and k (terminology follows Bolker)}{\plain \fs24 ;\par
+}{\plain \fs24 * values of 0 are not possible, so all the probabilities have to be \softline
+adjusted accordingly - this is the truncation;\par
+}{\plain \fs24 * both mu and k are functions of initial size;\par
+}{\plain \fs24 * I use SAS built-in negative binomial cdf (cumulative probability), \softline
+named probnegb;\par
+}{\plain \fs24 * probnegb is parameterized in n & p, not mu and k, so I have to re-parameterize from mu and k to n and p;\par
+}{\plain \fs24 * note that in effect the function uses log(size 1) and log(size2);}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 start growth(size1,size2,pgrow,target,adj,tmax);\par
+}{\plain \fs24   logsize1 = log(size1);\par
+}{\plain \fs24   mu = exp(}{\plain \fs24 \b 0.8}{\plain \fs24  + }{\plain \fs24 \b 0.8}{\plain \fs24 *logsize1);  * replace with your own values; \par
+}{\plain \fs24   if (target='grow') then mu = mu * adj; \par
+}{\plain \fs24   k = }{\plain \fs24 \b 2.5}{\plain \fs24  + }{\plain \fs24 \b 0.1}{\plain \fs24 *size1;            * replace with your own values;     \softline
+\par
+}{\plain \fs24   var = mu + (mu**2)/k;\par
+}{\plain \fs24   p = mu/var; n = mu*p/(1-p);\par
+}{\plain \fs24   if size2 < tmax then do;\par
+}{\plain \fs24   \ul0 \tab prob = probnegb(p,n,size2)- probnegb(p,n,size2-1);\par
+}{\plain \fs24                        end;\par
+}{\plain \fs24   * any predicted sizes > tmax are reset to tmax, with corresponding \softline
+adjustment in the probability of entering size class tmax;\par
+}{\plain \fs24   if size2 = tmax then do; \par
+}{\plain \fs24 \tab prob = 1 - probnegb(p,n,tmax-1); \par
+}{\plain \fs24                        end;\par
+}{\plain \fs24   * this is the adjustment for absent 0 values;\par
+}{\plain \fs24   * to do it, divide by (1 - P(zero));\par
+}{\plain \fs24   prob0 = probnegb(p,n,0);       * probablity of getting 0;\par
+}{\plain \fs24   probtrunc = prob/(1-prob0);    * adjusts all other probabliities;\par
+}{\plain \fs24   pgrow = probtrunc; \par
+}{\plain \fs24 finish;\par
+}{\plain \fs24 * PROBABILITY OF REPRODUCING SUBROUTINE (named repro);\par
+}{\plain \fs24 \par
+}{\plain \fs24 * probability of reproducing is a function of initial size;\par
+}{\plain \fs24 * size1 is input, prep is output;}{\plain \fs24 \par
+}{\plain \fs24 * target & adj are inputs for the elasticity analysis;}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 start repro(size1,prep,target,adj);\par
+}{\plain \fs24   logsize1 = log(size1); \par
+}{\plain \fs24   logitprep = -}{\plain \fs24 \b 7}{\plain \fs24  + }{\plain \fs24 \b 2}{\plain \fs24 *logsize1; * replace with your own values; \par
+}{\plain \fs24   explogit = exp(logitprep);\par
+}{\plain \fs24   prep = explogit / (}{\plain \fs24 \b 1}{\plain \fs24  + explogit);\par
+}{\plain \fs24   if (target='prep') then prep = prep*adj;\par
+}{\plain \fs24 finish;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * SEEDSET SUBROUTINE (named seedset);\par
+}{\plain \fs24 \par
+}{\plain \fs24 * seedset/reproductive plant is a function of initial size;\par
+}{\plain \fs24 * size1 is input, fec is output;}{\plain \fs24 \par
+}{\plain \fs24 * target & adj are inputs for the elasticity analysis;\par
+}{\plain \fs24 \par
+}{\plain \fs24 start seedset(size1,fec,target,adj);\par
+}{\plain \fs24   logsize1 = log(size1);\par
+}{\plain \fs24   mu = }{\plain \fs24 \b 0.5}{\plain \fs24  + }{\plain \fs24 \b 0.6}{\plain \fs24 *logsize1;  * replace with your own values; \par
+}{\plain \fs24   fec = exp(mu);\par
+}{\plain \fs24   if (target='seed') then fec = fec*adj;\par
+}{\plain \fs24 finish;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * SEED-TO-NEW-RECRUIT SUBROUTINE (named seedtorec);\par
+}{\plain \fs24 \par
+}{\plain \fs24 * probability of survival from seed to recruit;\par
+}{\plain \fs24 * a fixed value is used, output as psr;\par
+}{\plain \fs24 * target & adj are inputs for the elasticity analysis;\par
+}{\plain \fs24 \par
+}{\plain \fs24 start seedtorec(psr,target,adj);\par
+}{\plain \fs24   psr = }{\plain \fs24 \b 0.3}{\plain \fs24 ;                * replace with your own values; \par
+}{\plain \fs24   if (target='stor') then psr = psr*adj;\par
+}{\plain \fs24 finish;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * SIZE DISTRIBUTION OF RECRUITS SUBROUTINE (named recsize);\par
+}{\plain \fs24 \par
+}{\plain \fs24 * recsize is input (a given size of plants newly recruited to the \softline
+population);\par
+}{\plain \fs24 * output is precsize = probability of a new recruit being the give \softline
+size; \par
+}{\plain \fs24 * target & adj are inputs for the elasticity analysis;\par
+}{\plain \fs24 * a truncated negative binomial distribution is used;\par
+}{\plain \fs24 * terminology again follows Bolker, as does re-parameterization from \softline
+mu and k to n and p;\par
+}{\plain \fs24 * instead of the cdf function used in the growth subroutine, I use \softline
+the pdf (probability density function) for the negative binomial;\par
+}{\plain \fs24 * truncation to adjust for no 0 values as in the growth subroutine;\par
+}{\plain \fs24 \par
+}{\plain \fs24 start recsize(recsize,precsize,target,adj);\par
+}{\plain \fs24   k = }{\plain \fs24 \b 0.25}{\plain \fs24 ;  mu = }{\plain \fs24 \b 0.44}{\plain \fs24 ;            * replace with your own values;  \par
+}{\plain \fs24 * mu could be a function of treatment, etc. in another model;\par
+}{\plain \fs24   if (target='srec') then mu = mu*adj;\par
+}{\plain \fs24   * convert to n,p parameterization, following Bolker;\par
+}{\plain \fs24   n=k;  p = k / (k+mu);\par
+}{\plain \fs24   rawp = pdf('NEGBIN',recsize,p,n);\par
+}{\plain \fs24   prob0 = pdf('NEGBIN',0,p,n);\par
+}{\plain \fs24   probtrunc = rawp / (1 - prob0);\par
+}{\plain \fs24   precsize = probtrunc;\par
+}{\plain \fs24 finish;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * SAVE THE SUBROUTINES IN TEMPORARY STORAGE;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * the temporary storage catalog is called WORK.IMLSTOR;\par
+}{\plain \fs24 \par
+}{\plain \fs24 store module = (surv growth repro seedset recsize seedtorec);\par
+}{\plain \fs24 \par
+}{\plain \fs24 * summary of subroutines\par
+}{\plain \fs24 \par
+}{\plain \fs24 subroutine name\ul0 \tab \ul0 \tab requires\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab returns\par
+}{\plain \fs24 surv\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab size1,target,adj\ul0 \tab \ul0 \tab \ul0 \tab psurv\par
+}{\plain \fs24 growth\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab size1,size2,target,adj\ul0 \tab \ul0 \tab pgrow\par
+}{\plain \fs24 repro\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab size1,target,adj\ul0 \tab \ul0 \tab \ul0 \tab prep\par
+}{\plain \fs24 seedset\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab size1,target,adj\ul0 \tab \ul0 \tab \ul0 \tab fec\par
+}{\plain \fs24 recsize\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab trecsize,target,adj\ul0 \tab \ul0 \tab \ul0 \tab precsize\par
+}{\plain \fs24 seedtorec\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab target,adj\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab psr;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * leave IML, returning to regular SAS;\par
+}{\plain \fs24 quit;\par
+}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \b\ul C. IPM construction, calculation of elasticities}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 \ul IPM code}{\plain \fs24 \par
+}{\plain \fs24 \tab \tab \par
+}{\plain \fs24 proc iml; title 'IPM construction, elastiticies';\par
+}{\plain \fs24 * starts IML programming language;}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 * load the subroutines;\par
+}{\plain \fs24 \par
+}{\plain \fs24 load module = (surv growth repro seedset recsize seedtorec growth);\par
+}{\plain \fs24 \par
+}{\plain \fs24 * summary of subroutines\par
+}{\plain \fs24 \par
+}{\plain \fs24 subroutine name\ul0 \tab \ul0 \tab requires\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab returns\par
+}{\plain \fs24 surv\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab size1,target,adj\ul0 \tab \ul0 \tab \ul0 \tab psurv\par
+}{\plain \fs24 growth\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab size1,size2,target,adj\ul0 \tab \ul0 \tab pgrow\par
+}{\plain \fs24 repro\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab size1,target,adj\ul0 \tab \ul0 \tab \ul0 \tab prep\par
+}{\plain \fs24 seedset\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab size1,target,adj\ul0 \tab \ul0 \tab \ul0 \tab fec\par
+}{\plain \fs24 recsize\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab trecsize,target,adj\ul0 \tab \ul0 \tab \ul0 \tab precsize\par
+}{\plain \fs24 seedtorec\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab target,adj\ul0 \tab \ul0 \tab \ul0 \tab \ul0 \tab psr;\par
+}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 *----------SET THE OVERALL PARAMETERS--------------------------;\par
+}{\plain \fs24 tmax = }{\plain \fs24 \b 200}{\plain \fs24 ;              * maximum size, also matrix dimensions;\par
+}{\plain \fs24 print 'matrix dimensions', tmax;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * INSERT YOUR OWN, CORRECT BASELINE LAMBDA, CUT-AND-PASTED FROM THE \softline
+STATISTICAL ANALYSES;\par
+}{\plain \fs24 baselambda =  }{\plain \fs24 \b 1.05723}{\plain \fs24 ;   * insert correct value of baseline lambda    \softline
+  here, obtained from lambda when adj=1.0 in preliminary output;}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 * parameters for the elasticity analysis;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * changes in variable values are stored in adjvector;\par
+}{\plain \fs24 * 1.05 is a 5% increase, 0.95 is a 5% decrease, etc;\par
+}{\plain \fs24 adjvector = \{}{\plain \fs24 \b 0.8}{\plain \fs24 , }{\plain \fs24 \b 0.85}{\plain \fs24 , }{\plain \fs24 \b 0.9}{\plain \fs24 , }{\plain \fs24 \b 0.95}{\plain \fs24 , }{\plain \fs24 \b 1}{\plain \fs24 , }{\plain \fs24 \b 1.05}{\plain \fs24 , }{\plain \fs24 \b 1.1}{\plain \fs24 , }{\plain \fs24 \b 1.15}{\plain \fs24 , }{\plain \fs24 \b 1.2}{\plain \fs24 \};  \ul0 \tab \par
+}{\plain \fs24 nadj = nrow(adjvector);       * # of elements of adjvector;\par
+}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 * # of different variables whose elasticities will be calculated;\par
+}{\plain \fs24 nparms = }{\plain \fs24 \b 6}{\plain \fs24 ;\par
+}{\plain \fs24 finalnrows = nparms * nadj;}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 * alternative: baseline model only; * set nparms = 1;\par
+}{\plain \fs24 target = 'null';\par
+}{\plain \fs24 \tab \par
+}{\plain \fs24 * elasticities are calculated for only one variable at a time;\par
+}{\plain \fs24 * the variable being used is determined by targnumber; \par
+}{\plain \fs24 \par
+}{\plain \fs24 do targnumber = 1 to nparms;\par
+}{\plain \fs24 \par
+}{\plain \fs24   if targnumber = 1 then target = 'surv';  * P(survival);\par
+}{\plain \fs24   if targnumber = 2 then target = 'grow';  * mean predicted size;\par
+}{\plain \fs24   if targnumber = 3 then target = 'prep';  * P(reproducing);\par
+}{\plain \fs24   if targnumber = 4 then target = 'seed';  * seedset;\par
+}{\plain \fs24   if targnumber = 5 then target = 'stor';  * P(seed to recruit);\par
+}{\plain \fs24   if targnumber = 6 then target = 'srec';  * mean size-new recruits;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * if you want only the baseline model, set nparms = 1, above, and 
+make all 6 "if targnumber = ...." lines comments by putting * in \softline
+front of each one;  \par
+}{\plain \fs24 \par
+}{\plain \fs24 * create an output matrix to save the lambdas of this target;\par
+}{\plain \fs24 \par
+}{\plain \fs24 elasmat = j(nadj,4,0);\par
+}{\plain \fs24 \par
+}{\plain \fs24 do elascounter = 1 to nadj;         * select elasticity adjustment;\par
+}{\plain \fs24 \par
+}{\plain \fs24   adj = adjvector[elascounter];\par
+}{\plain \fs24 \par
+}{\plain \fs24 * GROWTH MATRIX, G ;\par
+}{\plain \fs24 \par
+}{\plain \fs24 G = j(tmax,tmax,0);\par
+}{\plain \fs24 do i = 1 to tmax;     * final size = matrix row;\par
+}{\plain \fs24   do j = 1 to tmax;   * initial size = matrix column;\par
+}{\plain \fs24     size1 = j; size2 = i; \par
+}{\plain \fs24     call surv(size1,psurv,target,adj);  \par
+}{\plain \fs24        if (psurv > 1.0) then psurv = 1;\par
+}{\plain \fs24 \tab call growth(size1,size2,pgrow,target,adj,tmax);\par
+}{\plain \fs24 \tab    if (size2 < 0) then size2 = 0.1;\par
+}{\plain \fs24 \tab gij = psurv*pgrow;  \par
+}{\plain \fs24 \tab G[i,j] = round(gij, 0.0000001);\par
+}{\plain \fs24 end; end;\par
+}{\plain \fs24 * print G;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * REPRODUCTION MATRIX, R;\par
+}{\plain \fs24 \par
+}{\plain \fs24 R = j(tmax,tmax,0);\par
+}{\plain \fs24 do i = 1 to tmax;     * final size = matrix row;\par
+}{\plain \fs24   do j = 1 to tmax;   * initial size = matrix column;\par
+}{\plain \fs24     size1 = j; recsize = i; \par
+}{\plain \fs24 \tab call repro(size1,prep,target,adj); \par
+}{\plain \fs24 \tab   if (prep > 1.0) then prep = 1;\par
+}{\plain \fs24 \tab call seedset(size1,fec,target,adj); \par
+}{\plain \fs24 \tab   if (fec < 0) then fec = 0.1;\par
+}{\plain \fs24      call seedtorec(psr,target,adj);     \par
+}{\plain \fs24 \tab call recsize(recsize,precsize,target,adj);\par
+}{\plain \fs24 \tab rij = prep*fec*psr*precsize;\par
+}{\plain \fs24 \tab R[i,j] = round(rij, 0.0000001);      \par
+}{\plain \fs24 end; end;\par
+}{\plain \fs24 * print R;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * COMBINE G & R TO MAKE L;\par
+}{\plain \fs24 \par
+}{\plain \fs24 L = G + R;                    * element-by-element matrix addition;\par
+}{\plain \fs24 * print L;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * CALCULATE LAMBDA & CHANGE IN LAMBDA;\par
+}{\plain \fs24 \par
+}{\plain \fs24 call eigen(evals,evecs,L);\par
+}{\plain \fs24 * print evals; \par
+}{\plain \fs24 lambda = evals[1,1];    * print elascounter,lambda;\par
+}{\plain \fs24 * one row of evals is one eigenvalue;\par
+}{\plain \fs24 * eigenvalues listed in order of size, real, then imaginary parts;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * principalReigenvector = evecs[,1]}{\plain \fs24 \par
+}{\plain \fs24 * it's not used here, but column 1 of evecs contains the principal \par
+}{\plain \fs24 right eigenvector, which, once divided by its sum, gives the stable \softline
+age distribution;}{\plain \fs24 \par
+}{\plain \fs24 \par
+}{\plain \fs24 lchange = (lambda-baselambda)/baselambda;\par
+}{\plain \fs24 \par
+}{\plain \fs24 elasmat[elascounter,1] = elascounter;\par
+}{\plain \fs24 elasmat[elascounter,2] = adj;\par
+}{\plain \fs24 elasmat[elascounter,3] = lambda;\par
+}{\plain \fs24 elasmat[elascounter,4] = lchange;\par
+}{\plain \fs24 \par
+}{\plain \fs24 end;                                  * end adjustment loop;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * print elasmat;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * save the eigenvalue, eigenvalue change, etc.;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * matrix of numerical values;\par
+}{\plain \fs24 if (targnumber = 1) then numout = elasmat;\par
+}{\plain \fs24 if (targnumber > 1) then numout = numout//elasmat;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * matrix of character values, holding the target names;\par
+}{\plain \fs24 dummymat = j(nadj,1,target);    \par
+}{\plain \fs24 if (targnumber = 1) then charmat = dummymat;\par
+}{\plain \fs24 if (targnumber > 1) then charmat = charmat//dummymat;\par
+}{\plain \fs24 \par
+}{\plain \fs24 end;                                 * end target loop;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * CREATE REGULAR SAS DATA SETS;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * numerical output;\par
+}{\plain \fs24 cols1 = \{elascount, adj, lambda, lchange\}; * new variable names;  \par
+}{\plain \fs24 create datnumout from numout [colname=cols1];  \par
+}{\plain \fs24 append from numout; \par
+}{\plain \fs24 \par
+}{\plain \fs24 cols2 = \{target\};\par
+}{\plain \fs24 create datcharout from charmat [colname=cols2];\par
+}{\plain \fs24 append from charmat;\par
+}{\plain \fs24 \par
+}\sect \sectd \sbknone\margrsxn900\pgndec\headery1440\footery1440\endnhere\endnhere 
+{\footer {
+\posxc\nowrap \plain \fs24 {\field{\*\fldinst { PAGE  }}}\par}
+\par}
+{\*\pnseclvl1\pndec\pnstart1{\pntxta .}}
+{\*\pnseclvl2\pnlcltr\pnstart1{\pntxta .}}
+{\*\pnseclvl3\pnlcrm\pnstart1{\pntxta .}}
+{\*\pnseclvl4\pndec\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl5\pnlcltr\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl6\pnlcrm\pnstart1{\pntxtb (}{\pntxta )}}
+{\*\pnseclvl7\pndec\pnstart1{\pntxta .}}
+{\*\pnseclvl8\pnlcltr\pnstart1{\pntxta .}}
+{\*\pnseclvl9\pnlcrm\pnstart1}
+
+\pard \fs24\tx-1260\tx-720\tx0\tx360\tx720\tx1080\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\tx10800\tx11520\tx12240\tx12960\tx13680\tx14400\tx15120\tx15840\tx16560\tx17280\tx18000\tx18720
+{\plain \fs24 quit;                                * leave iml;\par
+}{\plain \fs24 \par
+}{\plain \fs24 * proc print data=datnumout; title 'numerical output';\par
+}{\plain \fs24 * proc print data=datcharout; title 'character output';\par
+}{\plain \fs24 \par
+}{\plain \fs24 data datelasticities; \par
+}{\plain \fs24 \tab merge datnumout datcharout;  * combine the two data sets;\par
+}{\plain \fs24 proc print data=datelasticities; \par
+}{\plain \fs24 \tab title 'elasticities}{\plain \fs24 ';\par
+}{\plain \fs24 run;}}
